@@ -1,3 +1,4 @@
+import './appstyle.css'
 import {useState} from 'react'
 import {puppyList} from './data.js'
 import './App.css'
@@ -24,7 +25,7 @@ console.log(featuredPup)
             })
           }
           { featPupId && (
-            <div>
+            <div className='PupCard'>
               <h2>{featuredPup.name}</h2>
               <ul>
                 <li>Age: {featuredPup.age}</li>
